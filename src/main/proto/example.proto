@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "grpc.test";
+option java_outer_classname = "Example";
+option objc_class_prefix = "HLW";
+
+package grpc.test;
+
+service ExampleService {
+  rpc send (ExampleRequest) returns (ExampleReply) {}
+  rpc sendMany (stream ExampleRequest) returns (stream ExampleReply) {}
+}
+
+message ExampleRequest {
+  string name = 1;
+}
+
+message ExampleReply {
+  string message = 1;
+}

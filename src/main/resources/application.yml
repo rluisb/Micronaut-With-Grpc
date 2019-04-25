@@ -1,0 +1,7 @@
+micronaut:
+  application:
+    name: grpc-test
+
+grpc:
+  server:
+    port: 8080

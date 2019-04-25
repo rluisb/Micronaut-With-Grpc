@@ -1,0 +1,5 @@
+profile: grpc
+defaultPackage: grpc.test
+---
+testFramework: junit
+sourceLanguage: java
